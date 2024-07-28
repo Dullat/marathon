@@ -1,6 +1,6 @@
 const HeroAfter = () => {
   return (
-    <div className="px-[10%] w-full absolute bottom-0 translate-y-[100%]">
+    <div className="px-[10%] w-full overflow-hidden absolute z-20 bottom-0 translate-y-[100%]">
       <div
         className={`grid grid-cols-4 grid-rows-[24px_24px] gap-0 *:bg-[#2e042c]`}
       >

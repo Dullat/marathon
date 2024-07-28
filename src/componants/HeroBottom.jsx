@@ -5,14 +5,17 @@ const HeroBottom = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bottomBG})` }}
-      className="bg-cover bg-center px-[10%] text-white relative grid grid-cols-4 grid-rows-hero"
+      className="bg-cover bg-center px-[10%]
+       text-white relative grid grid-cols-4 grid-rows-hero
+       lg:px-6 sm:px-3
+       "
     >
-      <div className="px-4 col-span-4 justify-self-center h-fit relative w-full">
+      <div className="px-4 lg:px-0 col-span-4 justify-self-center h-fit relative w-full">
         <div className="w-full top-0 translate-y-[-50%] h-fit">
           <img src={nameSvg} alt="" />
         </div>
       </div>
-      <p className="text-3xl row-start-2 col-span-3 row-end-3 h-fit mb-20">
+      <p className="text-[32px] sm:text-[18px] row-start-2 col-span-3 row-end-3 h-fit mb-20 sm:mb-0">
         a massive ghost ship hangs in low orbit over a lost colony on Tau Ceti
         IV. The 30,000 souls who call this place home have disappeared without a
         trace. Strange signals hint at mysterious artifacts, long-dormant AI,
@@ -20,12 +23,13 @@ const HeroBottom = () => {
         unknown in a fight for fame… and infamy. Who among you will write their
         names across the stars?
       </p>
-      <div className="row-start-2 col-span-1 h-fit justify-self-end">
+      <div className="row-start-2 col-span-1 sm:row-start-3 sm:col-start-1 h-fit justify-self-end sm:justify-self-start sm:my-4">
         <svg
           width="6rem"
           height="5.9rem"
           viewBox="0 0 26 25"
           fill="none"
+          className="sm:w-14"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -34,7 +38,7 @@ const HeroBottom = () => {
           />
         </svg>
       </div>
-      <div className="relative row-start-3 col-span-2 grid-rows-subgrid grid-cols-subgrid h-max">
+      <div className="relative row-start-3 col-span-2 grid-rows-subgrid grid-cols-subgrid h-max sm:hidden">
         <span className="bg-[#823b70] px-2 py-1 absolute z-10">
           889-UTC: 2019
         </span>

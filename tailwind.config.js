@@ -2,15 +2,26 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      sans: "roboto",
+    },
     extend: {
       gridTemplateRows: {
-        // Simple 16 row grid
-        16: "repeat(16, minmax(0, 1fr))",
-
-        // Complex site-specific row configuration
-        layout: "200px minmax(900px, 1fr) 100px",
         hero: "auto 1fr auto",
       },
+    },
+    screens: {
+      "2xl": { max: "1535px" },
+
+      xl: { max: "1200px" },
+
+      lg: { max: "1023px" },
+
+      md: { max: "767px" },
+
+      sm: { max: "639px" },
+
+      xsm: { max: "460px" },
     },
   },
   plugins: [],
