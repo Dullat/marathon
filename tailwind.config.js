@@ -9,7 +9,7 @@ export default {
 
         // Complex site-specific row configuration
         layout: "200px minmax(900px, 1fr) 100px",
-        hero: "auto auto 100px",
+        hero: "auto 1fr auto",
       },
     },
   },
