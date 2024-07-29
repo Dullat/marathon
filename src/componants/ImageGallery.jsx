@@ -1,5 +1,3 @@
-import After from "./HeroAfter"
-
 const ImageGallery = ({ image }) => {
   return (
     <div className="w-full relative">

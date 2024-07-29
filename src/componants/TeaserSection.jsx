@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react"
-import Teaser from "../assets/gol_teaser_bg_desktop_large.mp4"
 
-const TeaserSection = () => {
+const TeaserSection = ({ movie, studio = false }) => {
   const [play, setPlay] = useState(true)
   const video = useRef()
 
@@ -11,10 +10,10 @@ const TeaserSection = () => {
   }
 
   return (
-    <div className="relative">
+    <div className="relative z-0">
       <video
         ref={video}
-        src={Teaser}
+        src={movie}
         autoPlay
         loop
         muted
@@ -24,12 +23,25 @@ const TeaserSection = () => {
       </video>
 
       <button className="absolute inset-0 flex flex-col items-center text-white">
-        <span className="text-8xl font-bold  mt-20">teaser</span>
-        <p className=" text-[12px] max-w-48 text-start mt-4 opacity-80">
-          by 2850, <b>clone technology</b> allows a person to reliably shift
-          their consciousness from their ‘born’ body to new, synthetic bodies
-          and back again.
-        </p>
+        {!studio ? (
+          <span className="text-8xl font-bold  mt-20">teaser</span>
+        ) : (
+          <span className="text-8xl font-bold  mt-20">
+            vidoc<sup>®</sup>
+          </span>
+        )}
+        {studio ? (
+          <p className=" text-[12px] max-w-48 text-start mt-4 opacity-80">
+            The Bungie development team talks about the vision powering
+            Marathon.
+          </p>
+        ) : (
+          <p className=" text-[12px] max-w-48 text-start mt-4 opacity-80">
+            by 2850, <b>clone technology</b> allows a person to reliably shift
+            their consciousness from their ‘born’ body to new, synthetic bodies
+            and back again.
+          </p>
+        )}
       </button>
       <button
         onClick={handleClick}

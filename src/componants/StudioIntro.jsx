@@ -2,7 +2,7 @@ import SideTexture from "../assets/gol_about_texture.png"
 
 const StudioIntro = () => {
   return (
-    <div className="w-full relative sm:px-2 lg:px-8 px-[10%] h-full">
+    <div className="w-full relative sm:px-2 lg:px-8 px-[10%] h-full z-40">
       <div className="absolute inset-0">
         <div className="flex justify-between items-center h-full">
           <img src={SideTexture} className="rotate-180" alt="" />
