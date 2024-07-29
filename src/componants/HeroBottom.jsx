@@ -1,5 +1,7 @@
 import nameSvg from "../assets/gol-logo.svg"
 import bottomBG from "../assets/goliath_about_bg_desktop_large.jpg"
+import FlavourGrid from "./FlavourGrid"
+import FlavourGridInnerBoxesHeroTop from "./FlavourGridInnerBoxesHeroTop"
 
 const HeroBottom = () => {
   return (
@@ -597,6 +599,11 @@ const HeroBottom = () => {
         <span className="absolute top-0 left-[100%] text-[10px] after:content-[''] after:block after:w-2 after:h-20 after:bg-[#823b70] after:absolute after:top-0 after:left-0">
           <p className="ml-3">SERIAL09</p>
         </span>
+      </div>
+      <div className="absolute inset-0 px-[10%] lg:px-6 sm:px-3">
+        <FlavourGrid className="h-full w-full opacity-40">
+          <FlavourGridInnerBoxesHeroTop />
+        </FlavourGrid>
       </div>
     </div>
   )

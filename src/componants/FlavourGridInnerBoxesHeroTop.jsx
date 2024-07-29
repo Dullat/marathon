@@ -7,10 +7,10 @@ const FlavourGridInnerBoxesHeroTop = () => {
         <span className="font-bold">BUNGIE REPRENTS</span>
       </div>
       <div></div>
-      <div>
+      <div className="sm:hidden">
         <span>24-28-1233</span>
       </div>
-      <div>
+      <div className="border-r-[1px]">
         <span className="absolute top-full translate-y-[-16px]">
           EEA MAC 2119
           <br />

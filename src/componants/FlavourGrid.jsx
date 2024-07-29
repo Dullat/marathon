@@ -1,11 +1,14 @@
-import FlavourGridInnerBoxesHeroTop from "./FlavourGridInnerBoxesHeroTop"
+import classNames from "classnames"
 
-const FlavourGrid = ({ height }) => {
+const FlavourGrid = ({ className, children, height = "32px" }) => {
   return (
     <div
-      className={`grid grid-cols-4 gap-0 h-[32px] text-yellow-300 *:border-l-[1px] *:relative *:flex *:items-end *:text-[11px] *:font-semi-bold *:px-2`}
+      className={classNames(
+        `grid grid-cols-flavourGrid gap-0 h-[${height}] text-yellow-300 *:border-l-[1px] *:relative *:flex *:items-end *:text-[11px] *:font-semi-bold *:px-2`,
+        className
+      )}
     >
-      <FlavourGridInnerBoxesHeroTop />
+      {children}
     </div>
   )
 }

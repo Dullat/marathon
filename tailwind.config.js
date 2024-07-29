@@ -9,6 +9,9 @@ export default {
       gridTemplateRows: {
         hero: "auto 1fr auto",
       },
+      gridTemplateColumns: {
+        flavourGrid: "repeat(auto-fit, minmax(0, 1fr))",
+      },
     },
     screens: {
       "2xl": { max: "1535px" },
