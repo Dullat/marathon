@@ -7,6 +7,8 @@ import ThreeShow from "./assets/gol-gallery-desktop-large.webp"
 import EyesPic from "./assets/goliath-worms-desktop-large.webp"
 import ImageGallery from "./componants/ImageGallery"
 import StudioIntro from "./componants/StudioIntro"
+import SubscriptionSection from "./componants/SubscriptionSection"
+import Marquee from "./componants/Marquee"
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <StudioIntro />
       <TeaserSection movie={studioMovie} studio={true} />
       <ImageGallery image={EyesPic} />
+      <SubscriptionSection />
+      <Marquee />
     </>
   )
 }

@@ -12,6 +12,22 @@ export default {
       gridTemplateColumns: {
         flavourGrid: "repeat(auto-fit, minmax(0, 1fr))",
       },
+      animation: {
+        marquee: "slide 20s linear infinite",
+        marquee2: "slide2 20s linear infinite",
+      },
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(0%)" },
+          "50%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        slide2: {
+          "0%": { transform: "translateX(0%)" },
+          "50%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
     },
     screens: {
       "2xl": { max: "1535px" },
