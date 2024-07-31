@@ -14,7 +14,7 @@ const HeroBottom = () => {
     >
       <div className="px-4 lg:px-0 col-span-4 justify-self-center h-fit relative w-full">
         <div className="w-full top-0 translate-y-[-50%] h-fit">
-          <img src={nameSvg} alt="" />
+          <img src={nameSvg} alt="" className="m-auto" />
         </div>
       </div>
       <p className="text-[32px] sm:text-[18px] row-start-2 col-span-3 row-end-3 h-fit mb-20 sm:mb-0">
