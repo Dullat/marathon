@@ -2,7 +2,7 @@ import LogoSvg from "./LogoSvg"
 
 const Marquee = () => {
   return (
-    <div className="relative overflow-hidden h-40 w-full">
+    <div className="relative overflow-hidden h-40 w-full bg-black">
       <div className="*:flex  flex-nowrap whitespace-nowrap items-center flex w-max animate-marquee absolute left-0 top-0">
         <ul className="*:bg-[#c2fe0c] *:flex *:p-2 *:gap-2 *:flex-nowrap *:whitespace-nowrap *:w-fit ">
           <li className="">

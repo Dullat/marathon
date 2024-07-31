@@ -9,6 +9,9 @@ import ImageGallery from "./componants/ImageGallery"
 import StudioIntro from "./componants/StudioIntro"
 import SubscriptionSection from "./componants/SubscriptionSection"
 import Marquee from "./componants/Marquee"
+import Store from "./componants/Store"
+import character from "./assets/goliath-aerial-desktop-large.webp"
+import Footer from "./componants/Footer"
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
       <ImageGallery image={EyesPic} />
       <SubscriptionSection />
       <Marquee />
+      <Store />
+      <ImageGallery image={character} />
+      <Footer />
     </>
   )
 }

@@ -12,7 +12,7 @@ const SubscriptionSection = () => {
           <FlavourGridInnerBoxesHeroTop />
         </FlavourGrid>
       </div>
-      <div className="flex flex-col items-center  relative text-white pt-40 pb-8 px-[10%]">
+      <div className="flex flex-col items-center  relative text-white pt-40 pb-8 px-[10%] text-center">
         <svg
           width="156"
           height="74"
@@ -84,11 +84,11 @@ const SubscriptionSection = () => {
             fill="white"
           />
         </svg>
-        <h3 className="mt-16 text-4xl font-bold">stay connected</h3>
-        <p className="mt-10 text-4xl font-light">
+        <h3 className="mt-16 text-4xl sm:text-3xl font-bold">stay connected</h3>
+        <p className="mt-10 text-4xl sm:text-3xl font-light">
           Never missout the latest Marathon news
         </p>
-        <form action="" className="mt-12 flex flex-col min-w-[45rem]">
+        <form action="" className="mt-12 flex flex-col w-[45rem] md:w-full">
           <label htmlFor="subscription" className="text-start font-light">
             connect email address<span className="text-[#c2fe0c]"> *</span>
           </label>
@@ -96,11 +96,11 @@ const SubscriptionSection = () => {
             id="subscription"
             type="text"
             className="border-[2px] border-white rounded-sm mt-4 outline-none bg-transparent
-            text-3xl p-3"
+            text-3xl sm:text-xl p-3 w-full"
           />
           <button
             className="mt-10 bg-[#c2fe0c] uppercase text-black 
-          text-6xl font-bold w-fit self-center
+          text-6xl sm:text-4xl font-bold w-fit self-center
           px-4 py-2"
           >
             <span>sign-up</span>
