@@ -1,8 +1,18 @@
-# React + Vite
+# React Marathon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this project is a clone of Marathon web
 
-Currently, two official plugins are available:
+- i dont own any image, vid, logo and design i just coded a clone
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Bungie, the Bungie logo, Images, Videos, Marathon, and the Marathon logo are among the trademarks of Bungie, Inc.
+
+## why ?
+
+Because i like their page, i want to learn by building these type of cool webpages
+
+The game will be out soon idk when,..... just waiting for the release
+
+## Links
+
+- Original Marathon The Game webpage visit [here](https://www.marathonthegame.com/)
+- Clone that i created visit [here](https://dullat.github.io/marathon)
